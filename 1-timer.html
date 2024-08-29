@@ -5,15 +5,35 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Timer</title>
     <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DG15Ih6_.css">
   </head>
   <body>
     <div class="container">
       <a class="go-home" href="./index.html">Go to home</a>
-      <div>
-        <ul class="gallery js-gallery"></ul>
+    </div>
+    <div>
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start>Start</button>
+
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
     </div>
   </body>
