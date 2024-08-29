@@ -1,0 +1,100 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+
+
+.form input[type="number"] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin-right: 8px;
+}
+
+
+.form input[type="number"]:hover {
+  border: 1px solid #000;
+}
+
+.form input[type="number"]:focus {
+  border: 1px solid #4e75ff;
+}
+
+
+.form input[type="number"]:disabled {
+  border: 1px solid #808080;
+}
+
+.form label:first-child{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+
+fieldset {
+  display: flex;
+  width: 360px;
+  height: 78px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+  transition: border linear 250ms;
+}
+
+fieldset:hover {
+  border: 2px solid #000;
+}
+
+fieldset:focus-within {
+  border: 2px solid #000;
+}
+
+/* Рамка змінюється, коли вибрана радіокнопка */
+input[type="radio"]:checked~fieldset {
+  border: 2px solid #000;
+}
+
+
+.form button[type="submit"] {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: var(--iris);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  transition: background-color linear 250ms;
+}
+
+.form button[type="submit"]:hover {
+  background-color: var(--ocean);
+}
+
+.form button[type="submit"]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
