@@ -1,0 +1,28 @@
+.nav-link {
+  border-radius: 10px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color linear 250ms;
+}
+
+.nav-link:hover{
+  background-color: var(--ocean);
+}
+
+.nav-list{
+  display: flex;
+  gap: 25px;
+}

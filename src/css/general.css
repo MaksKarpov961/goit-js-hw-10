@@ -1,0 +1,50 @@
+:root {
+  --iris: #4e75ff;
+  --ocean: #6c8cff;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+  --font-family: "Montserrat", sans-serif; 
+}
+
+body {
+  font-family: var(--font-family); 
+  background-color: var(--cloud);
+}
+
+.container{
+  padding: 15px;
+}
+
+
+
+.go-home{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: var(--iris);
+  transition: background-color linear 250ms;
+
+  margin-bottom: 25px;
+}
+
+.go-home:hover{
+  background-color: var(--ocean);
+}
